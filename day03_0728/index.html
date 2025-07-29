@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 p516 연습</title>
+</head>
+
+<body>
+    <!-- 결과를 뿌역줄 영역 -->
+    <p id="result">결과</p>
+
+    <!-- 스크립트 태그 안에 기술로 적거나 외부 파일로 링크 -->
+    <script>
+        //선언부
+        let name = "kim";
+        let classroom = 204
+
+        //구현부
+        let result = "이름:" + name + " 반 " + classroom
+
+        //출력부
+        console.log(result)
+        console.log(`이름은 ${name}이고, ${classroom}반이야`)
+        document.getElementById("result").innerHTML = result
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
