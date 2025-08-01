@@ -1,0 +1,11 @@
+body {
+    margin: 0 auto;
+    width: 400px;
+    background-color: azure;
+    border: 1px solid rebeccapurple;
+    text-align : center;
+}
+
+/* .tit {
+    margin: 0 auto;
+} */
