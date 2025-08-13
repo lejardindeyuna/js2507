@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        <p id="p1">첫번째</p>
+        <p id="p2">두번째</p>
+        <!-- <p>This is new.</p> -->
+    </div>
+    <script>
+        // Node: 엘리먼트생성 
+        const myP = document.createElement("p")
+        // id 추가
+        myP.id = "myId"
+        // class 추가
+        myP.classList.add = ("cls")
+        // textNode 생성
+        const mytxt = document.createElement("세번째")
+        // 엘리먼트에 자식 추가(textNode)
+        myP.appendChild(mytxt)
+
+        // div1의 자식으로 추가
+        let div1 = document.getElementById("div1")
+        // div1.appendChild(myP)
+
+    </script>
+    <script src="./js/w3_node.js"></script>
+</body>
+
+</html>

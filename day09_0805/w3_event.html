@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript HTML Events</h1>
+    <h2>The onclick Attribute</h2>
+
+    <!-- ▼ onclick은 단순히 “클릭하라”는 의미가 아니라, “클릭하면 이 동작을 해라”는 명령을 지정하는 것입니다. -->
+    <!-- ▼ this = 나 자신 -->
+    <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+
+    <p onclick="this.innerHTML='Ooops!'">Click on this text!</p>
+    <!-- <script>
+        function oops() {
+            this.innerHTML = 'Ooops!'
+        }
+    </script> -->
+    <script src="./js/w3_event.js"></script>
+</body>
+
+
+
+</html>

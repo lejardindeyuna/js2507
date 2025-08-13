@@ -1,0 +1,38 @@
+<!-- W3 예제 https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementcreate -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>JavaScript HTML DOM</h2>
+    <p>Add a new HTML Element.</p>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <script>
+        // 일단 p 태그를 만들어
+        const para = document.createElement("p");
+        // 
+        const node = document.createTextNode("This is new.");
+        // appendChild는 컴퓨터한테 어떤 것을 맨 마지막에 붙여 주세요라는 뜻임
+        // // 쉽게 설명하자면
+        // 친구들이 줄을 서 있어요.
+        // 새 친구가 와서 줄 맨 끝에 서고 싶다면, appendChild를 사용해서 맨 끝에 친구를 붙이는 것과 같아요.
+        para.appendChild(node);
+        const element = document.getElementById("div1");
+        element.appendChild(para);
+
+    </script>
+</body>
+
+</html>

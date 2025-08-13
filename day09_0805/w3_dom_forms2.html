@@ -1,0 +1,40 @@
+<!-- https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_js -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Validation</h2>
+    <p>Please input a number between 1 and 10:</p>
+    <!-- ▼ <input>(입력하는 박스) 태그는 사용자가 글자나 숫자 등을 입력할 수 있는 상자를 만들 때 사용합니다. -->
+    <input id="numb">
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <!-- ▼ <p id="myParagraph">안녕하세요! 반갑습니다.</p> <p 태그 예시 -->
+    <p id="demo"></P>
+    <script>
+        function myFunction() {
+
+            let x = document.getElementById("numb").value;
+            let text;
+            // if (isNaN(x) || x < 1 || x > 10) { < 값을 받아서 오와 연산(AND 연산)을 함
+            if (isNaN(x) || x < 1 || x > 10) {
+                // 제외할 입력값에 대한 예외 처리 
+                text = "Input not valid";
+            } else {
+                text = "Input OK";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+
+</body>
+
+</html>
